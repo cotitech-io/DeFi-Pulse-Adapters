@@ -12,7 +12,7 @@ const USDTPlatform = "0xe0437BeB5bb7Cf980e90983f6029033d710bd1da"; // CVI USDT P
 const ETHPlatform = "0x145e6df857b241efdcb9b78a1b97a032606d47a7"; // CVI ETH Platform Contract
 
 const USDT = "0xdac17f958d2ee523a2206206994597c13d831ec7";
-const GOVI = "0xeeaa40b28a2d1b0b08f6f97bb1dd4b75316c6107";
+const ETH = "0x0000000000000000000000000000000000000000";
 
 /*==================================================
   TVL
@@ -36,10 +36,11 @@ async function tvl(timestamp, block) {
   ]);
 
   return {
-    [USDTPlatform]: USDTResponse.output,
-    [ETHPlatform]: ETHResponse.output,
+    [USDT]: USDTResponse.output,
+    [ETH]: ETHResponse.output,
   };
 }
+
 /*==================================================
   Exports
   ==================================================*/
